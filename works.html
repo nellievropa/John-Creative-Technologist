@@ -5,25 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>John-Creative Technologist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- Header -->
     <header>
       <nav>
-        <a href="./index.html"><img src="./images/logo.svg" alt="Tree colors Logo" /></a>
-        <ul>
-          <li><a href="./blog.html">Blog</a></li>
-          <li><a href="./works.html">Work</a></li>
-          <li><a href="#">Contact</a></li>
+        <a href="./index.html"
+          ><img src="./images/logo.svg" alt="Tree colors Logo"
+        /></a>
+        <ul class="site-nav list">
+          <li><a href="./blog.html" class="link">Blog</a></li>
+          <li><a href="./works.html" class="link current">Work</a></li>
+          <li><a href="#" class="link">Contact</a></li>
         </ul>
       </nav>
     </header>
     <main>
-    <h1>Work</h1>
-      
+      <h1 class="page-title">Work</h1>
+
       <section>
-          <ul>
-            <!-- 1 card -->
+        <ul>
+          <!-- 1 card -->
           <li>
             <img
               src="./images/featuredwork/screenpart.jpg"
@@ -31,9 +40,10 @@
               height="213"
               alt="Part of screen with the project"
             />
-            <h2>Designing Dashboards</h2>
-            <p><time datetime="2020">2020</time> Dashboard</p>
-            <p>
+            <h2 class="cards-title">Designing Dashboards</h2>
+            <button class="button-secondary"><time datetime="2020">2020</time></button>
+            <p class="card-mark"> Dashboard</p>
+            <p class="text">
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
               amet sint. Velit officia consequat duis enim velit mollit.
               Exercitation veniam consequat sunt nostrud amet.
@@ -47,9 +57,10 @@
               height="213"
               alt="Picture of beautiful woman"
             />
-            <h2>Vibrant Portraits</h2>
-            <p><time datetime="2018">2018</time> Illustration</p>
-            <p>
+            <h2 class="cards-title">Vibrant Portraits</h2>
+            <button class="button-secondary"><time datetime="2020">2020</time></button>
+            <p class="card-mark"> Dashboard</p>
+            <p class="text">
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
               amet sint. Velit officia consequat duis enim velit mollit.
               Exercitation veniam consequat sunt nostrud amet.
@@ -63,9 +74,10 @@
               height="213"
               alt="Beautiful litter A"
             />
-            <h2>36 Days of Malayalam Type</h2>
-            <p><time datetime="2018">2018</time> Typography</p>
-            <p>
+            <h2 class="cards-title">36 Days of Malayalam Type</h2>
+            <button class="button-secondary"><time datetime="2018">2018</time></button>
+            <p class="card-mark"> Typography</p>
+            <p class="text">
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
               amet sint. Velit officia consequat duis enim velit mollit.
               Exercitation veniam consequat sunt nostrud amet.
@@ -79,9 +91,10 @@
               height="213"
               alt="Pink macket of card"
             />
-            <h2>VComponents</h2>
-            <p><time datetime="2017">2017</time> Components, Design</p>
-            <p>
+            <h2 class="cards-title">VComponents</h2>
+            <button class="button-secondary"><time datetime="2017">2017</time></button>
+            <p class="card-mark"> Components, Design</p>
+            <p class="text">
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
               amet sint. Velit officia consequat duis enim velit mollit.
               Exercitation veniam consequat sunt nostrud amet.
@@ -93,11 +106,16 @@
     <!-- Footer -->
     <footer>
       <ul>
-        <li><a href="" aria-label="Figma link">Figma</a></li>
-        <li><a href="" aria-label="Twitter link">Twitter</a></li>
-        <li><a href="" aria-label="Instagram link">Instagram</a></li>
+        <!-- aria-label="Figma link" -->
+        <li><a href="./images/icons/Figma (2).svg" class="icons">Figma</a></li>
+        <!-- aria-label="Twitter link" -->
+        <li><a href="./images/icons/Twitter.svg" class="icons">Twitter</a></li>
+        <!-- aria-label="Instagram link" -->
+        <li>
+          <a href="./images/icons/Instagram.svg" class="icons">Instagram</a>
+        </li>
       </ul>
-      <p>&#169; 2022 Your Name. All rights reserved.</p>
+      <p class="footer-text">&#169; 2022 Your Name. All rights reserved.</p>
     </footer>
   </body>
 </html>

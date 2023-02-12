@@ -1,0 +1,129 @@
+:root {
+  --text-main-color: #21243d;
+  --primary-color: #ff6464;
+  --white-color: #ffffff;
+  --bbackground-color: #edf7fa;
+  --text-date-color: #8695a4;
+  --btn-color: #2a326f;
+  --text-secondary-color: #00a8cc;
+  --icon-color: #678398;
+}
+
+body {
+  background-color: var(--white-color);
+  color: var(--text-main-color);
+  font-family: "Inter", sans-serif;
+}
+ul {
+  list-style: none;
+}
+/* Header */
+.site-nav .link {
+  text-decoration: none;
+  color: var(--text-main-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--primary-color);
+}
+/* Hero */
+.hero-title {
+  font-weight: 700;
+  font-size: 44px;
+  line-height: calc(55 / 44);
+}
+.text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(24 / 16);
+}
+.button {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+}
+/* Recent post */
+.post {
+  background-color: var(--bbackground-color);
+}
+.section-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: calc(36 / 24);
+  text-align: center;
+}
+.site-link {
+  color: var(--text-secondary-color);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  text-decoration: none;
+}
+.post-card {
+  background-color: var(--white-color);
+}
+.card-title {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: calc(42 / 28);
+}
+.date {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--text-date-color);
+}
+/* Works */
+.button-secondary {
+  background-color: var(--btn-color);
+  color: var(--white-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(24 / 16);
+  text-align: center;
+}
+.card-mark {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(24 / 16);
+  color: var(--text-date-color);
+}
+/* Footer */
+.icons {
+  color: var(--icon-color);
+  text-decoration: none;
+}
+.footer-text {
+  color: var(--icon-color);
+  font-size: 14px;
+  line-height: calc(22 / 14);
+  text-align: center;
+}
+/* Blog page */
+.page-title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: calc(40/40);
+        text-align: center;
+}
+.post-title {
+    font-weight: 600;
+font-size: 28px;
+line-height: 150%;
+}
+.site-nav .link.current {
+    color: var(--primary-color);
+}
+/* Work page */
+.cards-title {
+    font-weight: 600;
+font-size: 28px;
+line-height: 150%;
+}

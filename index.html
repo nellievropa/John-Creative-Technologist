@@ -5,29 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>John-Creative Technologist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
   </head>
   <body>
     <!-- Header -->
     <header>
-      <nav>
+      <nav class="header-page">
         <a href="./index.html"><img src="./images/logo.svg" alt="Tree colors Logo" /></a>
-        <ul>
-          <li><a href="./blog.html">Blog</a></li>
-          <li><a href="./works.html">Work</a></li>
-          <li><a href="">Contact</a></li>
+        <ul class="site-nav list">
+          <li><a href="./blog.html" class="link">Blog</a></li>
+          <li><a href="./works.html" class="link">Work</a></li>
+          <li><a href="#" class="link">Contact</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <!-- Hero section -->
-      <section>
-        <h1>Hi, I’m John! <br />Creative Technologist</h1>
-        <p>
+      <section class="hero">
+        <h1 class="hero-title">Hi, I’m John! <br />Creative Technologist</h1>
+        <p class="text">
           Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
           sint. Velit officia consequat duis enim velit mollit. Exercitation
           veniam consequat sunt nostrud amet.
         </p>
-        <button type="button">Check my Work</button>
+        <button type="button" class="button">Check my Work</button>
         <img
           src="./images/John'sPhoto.jpg"
           width="252"
@@ -36,23 +40,23 @@
         />
       </section>
       <!-- Recent Posts -->
-      <section>
-        <h2>Recent Posts</h2>
-        <a href="">View all</a>
+      <section class="post">
+        <h2 class="section-title">Recent Posts</h2>
+        <a href="./blog.html" class="site-link">View all</a>
         <ul>
-          <li>
-            <h3>Post Title</h3>
-            <p><time datetime="2021-02-12">12 Feb 21</time> | Design System</p>
-            <p>
+          <li class="post-card">
+            <h3 class="card-title">Post Title</h3>
+            <p class="date"><time datetime="2021-02-12">12 Feb 21</time> | Design System</p>
+            <p class="text">
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
               amet sint. Velit officia consequat duis enim velit mollit.
               Exercitation veniam consequat sunt nostrud amet.
             </p>
           </li>
-          <li>
-            <h3>Post Title</h3>
-            <p><time datetime="2021-02-12">12 Feb 21</time> | Design System</p>
-            <p>
+          <li class="post-card">
+            <h3 class="card-title">Post Title</h3>
+            <p class="date"><time datetime="2021-02-12">12 Feb 21</time> | Design System</p>
+            <p class="text">
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
               amet sint. Velit officia consequat duis enim velit mollit.
               Exercitation veniam consequat sunt nostrud amet.
@@ -62,8 +66,8 @@
       </section>
       <!-- Featured Work -->
       <section>
-        <h2>Featured Work</h2>
-        <a href="">View all</a>
+        <h2 class="section-title">Featured Work</h2>
+        <a href="./works.html" class="site-link">View all</a>
         <ul>
           <li>
             <img
@@ -72,9 +76,10 @@
               height="213"
               alt="Part of screen with the project"
             />
-            <h3>Designing Dashboards</h3>
-            <p><time datetime="2020">2020</time> Dashboard</p>
-            <p>
+            <h3 class="card-title">Designing Dashboards</h3>
+            <button class="button-secondary"><time datetime="2020">2020</time></button>
+            <p class="card-mark"> Dashboard</p>
+            <p class="text">
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
               amet sint. Velit officia consequat duis enim velit mollit.
               Exercitation veniam consequat sunt nostrud amet.
@@ -87,9 +92,10 @@
               height="213"
               alt="Picture of beautiful woman"
             />
-            <h3>Vibrant Portraits</h3>
-            <p><time datetime="2018">2018</time> Illustration</p>
-            <p>
+            <h3 class="card-title">Vibrant Portraits</h3>
+            <button class="button-secondary"><time datetime="2020">2020</time></button>
+            <p class="card-mark"> Dashboard</p>
+            <p class="text">
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
               amet sint. Velit officia consequat duis enim velit mollit.
               Exercitation veniam consequat sunt nostrud amet.
@@ -101,11 +107,14 @@
     <!-- Footer -->
     <footer>
       <ul>
-        <li><a href="" aria-label="Figma link">Figma</a></li>
-        <li><a href="" aria-label="Twitter link">Twitter</a></li>
-        <li><a href="" aria-label="Instagram link">Instagram</a></li>
+        <!-- aria-label="Figma link" -->
+        <li><a href="./images/icons/Figma (2).svg" class="icons">Figma</a></li> 
+        <!-- aria-label="Twitter link" -->
+        <li><a href="./images/icons/Twitter.svg" class="icons">Twitter</a></li>
+        <!-- aria-label="Instagram link" -->
+        <li><a href="./images/icons/Instagram.svg" class="icons">Instagram</a></li>
       </ul>
-      <p>&#169; 2022 Your Name. All rights reserved.</p>
+      <p class="footer-text">&#169; 2022 Your Name. All rights reserved.</p>
     </footer>
   </body>
 </html>

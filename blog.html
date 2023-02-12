@@ -5,29 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>John-Creative Technologist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
   </head>
   <body>
     <!-- Header -->
     <header>
       <nav>
         <a href="./index.html"><img src="./images/logo.svg" alt="Tree colors Logo" /></a>
-        <ul>
-          <li><a href="">Blog</a></li>
-          <li><a href="./works.html">Work</a></li>
-          <li><a href="#">Contact</a></li>
+        <ul class="site-nav list">
+          <li><a href="./blog.html" class="link current">Blog</a></li>
+          <li><a href="./works.html" class="link">Work</a></li>
+          <li><a href="#" class="link">Contact</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <!-- Hero section -->
       <section>
-        <h1>Blog</h1>
+        <h1 class="page-title">Blog</h1>
         
         <ul>
           <li>
-            <h2>Post Title</h2>
-            <p><time datetime="2021-02-12">12 Feb 21</time> | Design System</p>
-            <p>
+            <h2 class="post-title">Post Title</h2>
+            <p class="date"><time datetime="2021-02-12">12 Feb 21</time> | Design System</p>
+            <p class="text">
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
               amet sint. Velit officia consequat duis enim velit mollit.
               Exercitation veniam consequat sunt nostrud amet.
@@ -35,8 +39,8 @@
           </li>
           <li>
             <h2>Post Title</h2>
-            <p><time datetime="2021-02-12">12 Feb 21</time> | Design System</p>
-            <p>
+            <p class="date"><time datetime="2021-02-12">12 Feb 21</time> | Design System</p>
+            <p class="text">
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
               amet sint. Velit officia consequat duis enim velit mollit.
               Exercitation veniam consequat sunt nostrud amet.
@@ -44,8 +48,8 @@
           </li>
           <li>
             <h2>Post Title</h2>
-            <p><time datetime="2021-02-12">12 Feb 21</time> | Design System</p>
-            <p>
+            <p class="date"><time datetime="2021-02-12">12 Feb 21</time> | Design System</p>
+            <p class="text">
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
               amet sint. Velit officia consequat duis enim velit mollit.
               Exercitation veniam consequat sunt nostrud amet.
@@ -53,8 +57,8 @@
           </li>
           <li>
             <h2>Post Title</h2>
-            <p><time datetime="2021-02-12">12 Feb 21</time> | Design System</p>
-            <p>
+            <p class="date"><time datetime="2021-02-12">12 Feb 21</time> | Design System</p>
+            <p class="text">
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
               amet sint. Velit officia consequat duis enim velit mollit.
               Exercitation veniam consequat sunt nostrud amet.
@@ -66,11 +70,14 @@
     <!-- Footer -->
     <footer>
       <ul>
-        <li><a href="" aria-label="Figma link">Figma</a></li>
-        <li><a href="" aria-label="Twitter link">Twitter</a></li>
-        <li><a href="" aria-label="Instagram link">Instagram</a></li>
+        <!-- aria-label="Figma link" -->
+        <li><a href="./images/icons/Figma (2).svg" class="icons">Figma</a></li> 
+        <!-- aria-label="Twitter link" -->
+        <li><a href="./images/icons/Twitter.svg" class="icons">Twitter</a></li>
+        <!-- aria-label="Instagram link" -->
+        <li><a href="./images/icons/Instagram.svg" class="icons">Instagram</a></li>
       </ul>
-      <p>&#169; 2022 Your Name. All rights reserved.</p>
+      <p class="footer-text">&#169; 2022 Your Name. All rights reserved.</p>
     </footer>
   </body>
 </html>
