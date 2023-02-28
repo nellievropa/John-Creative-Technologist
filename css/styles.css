@@ -17,7 +17,21 @@ body {
 ul {
   list-style: none;
 }
+.container {
+  width: 1440px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 2px solid tomato;
+}
 /* Header */
+.main-nav{
+  display: flex;
+  align-items: center;
+}
+.site-nav  {
+display: flex;
+}
 .site-nav .link {
   text-decoration: none;
   color: var(--text-main-color);
