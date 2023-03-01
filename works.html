@@ -16,19 +16,21 @@
   <body>
     <!-- Header -->
     <header>
-      <nav>
+      <nav class="container-header-footer main-nav">
         <a href="./index.html"
-          ><img src="./images/logo.svg" alt="Tree colors Logo"
-        /></a>
-        <ul class="site-nav list">
-          <li><a href="./blog.html" class="link">Blog</a></li>
-          <li><a href="./works.html" class="link current">Work</a></li>
-          <li><a href="#" class="link">Contact</a></li>
-        </ul>
+        ><img src="./images/logo.svg" alt="Tree colors Logo"
+      /></a>
+      <ul class="site-nav list">
+        <li class="item"><a href="./blog.html" class="link">Blog</a></li>
+        <li  class="item"><a href="./works.html" class="link current">Work</a></li>
+        <li  class="item"><a href="#" class="link">Contact</a></li>
+      </ul>
       </nav>
+     
     </header>
     <main>
-      <h1 class="page-title">Work</h1>
+      <div class="container">
+        <h1 class="page-title">Work</h1>
 
       <section>
         <ul>
@@ -101,10 +103,12 @@
             </p>
           </li>
         </ul>
+      </div>
       </section>
     </main>
     <!-- Footer -->
     <footer>
+     <div class="container-header-footer">
       <ul>
         <!-- aria-label="Figma link" -->
         <li><a href="./images/icons/Figma (2).svg" class="icons">Figma</a></li>
@@ -116,6 +120,7 @@
         </li>
       </ul>
       <p class="footer-text">&#169; 2022 Your Name. All rights reserved.</p>
+     </div>
     </footer>
   </body>
 </html>

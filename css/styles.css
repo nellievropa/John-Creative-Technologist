@@ -17,46 +17,134 @@ body {
 ul {
   list-style: none;
 }
+.container {
+  width: 900px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  margin: 0 auto;
+
+  outline: 1px dashed green;
+}
+.container-header-footer {
+  width: 1100px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  margin: 0 auto;
+
+  outline: 1px dashed orangered;
+}
+.container-blog {
+  width: 840px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  margin: 0 auto;
+
+  outline: 1px dashed blueviolet;
+}
 /* Header */
+.container-header-footer.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ul */
+.site-nav {
+  display: flex;
+margin-top: 0;
+margin-bottom: 0;
+}
+.item {
+  padding-top: 29px;
+  padding-bottom: 29px;
+  
+}
+.item:not(:first-child) {
+  margin-left: 24px;
+}
 .site-nav .link {
   text-decoration: none;
   color: var(--text-main-color);
   font-weight: 500;
   font-size: 16px;
-  line-height: calc(19 / 16);
+  line-height: calc(24 / 16);
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--primary-color);
 }
+
 /* Hero */
+.hero .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.description-hero {
+  display: inline-block;
+  width: 548px;
+  
+
+  outline: 1px solid green;
+}
+.hero-photo {
+  display: block;
+  margin-right: 38px;
+  margin-top: 72px;
+  margin-bottom: 72px;
+}
+
 .hero-title {
+  margin: 0;
+  margin-top: 59px;
   font-weight: 700;
   font-size: 44px;
   line-height: calc(55 / 44);
 }
-.text {
+.hero-descr {
+  margin: 0;
+    margin-top: 24px;
   font-weight: 400;
   font-size: 16px;
   line-height: calc(24 / 16);
 }
 .button {
+  margin-top: 24px;
+  padding: 12px 28px;
   background-color: var(--primary-color);
   color: var(--white-color);
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
   text-align: center;
+  border-radius: 4px;
 }
 /* Recent post */
 .post {
   background-color: var(--bbackground-color);
 }
+.post .container {
+  display: block;
+  
+}
+/* join H2 + view */
+.recent-post-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end
+}
+
+/* h2 */
 .section-title {
+  margin: 0;
+  margin-top: 40px;
   font-weight: 600;
   font-size: 24px;
   line-height: calc(36 / 24);
-  text-align: center;
+  text-align: left;
 }
 .site-link {
   color: var(--text-secondary-color);
@@ -66,35 +154,109 @@ ul {
   text-align: center;
   text-decoration: none;
 }
+/* ul  */
+.recent-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
 .post-card {
   background-color: var(--white-color);
+  margin-bottom: 72px;
+  border: 2px solid #FFFFFF;
+border-radius: 8px;
 }
+.post-card:not(:last-child) {
+  margin-right: 12px;
+}
+.post-card:last-child {
+  margin-left: 12px;
+}
+
 .card-title {
+  margin-top: 16px;
+  margin-bottom: 8px;
   font-weight: 600;
   font-size: 28px;
   line-height: calc(42 / 28);
 }
-.date {
+.recent-date {
+  margin: 0;
   font-weight: 500;
   font-size: 16px;
   line-height: 150%;
   color: var(--text-date-color);
 }
+.recent-text {
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
 /* Works */
+.our-work .container {
+  display: block;
+}
+/* ul */
+.our-work-list {
+  padding: 0;
+  margin: 0;
+}
+/* li */
+.our-work-card {
+display: flex;
+justify-content: space-between;
+}
+/* photo */
+.work-picture {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  border-radius: 6px;
+
+}
+/* h3 + date+ p */
+.our-work-descr {
+  display: block;
+  margin-left: 24px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+/* h3 */
+.work-card-title {
+  margin: 16px 8px 8px 8px;
+  padding: 0;
+  font-weight: 600;
+font-size: 28px;
+line-height: calc(42/28);
+}
+/* btn + p */
+.work-time {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
 .button-secondary {
+  padding: 4px 16px;
+  margin-left: 8px;
+  margin-right: 24px;
   background-color: var(--btn-color);
   color: var(--white-color);
   font-weight: 500;
   font-size: 16px;
   line-height: calc(24 / 16);
   text-align: center;
+  border-radius: 8px;
 }
-.card-mark {
+.work.recent-text {
+ margin-top: 34px;
+  margin-left: 8px;
+}
+.work-card-mark {
   font-weight: 500;
   font-size: 16px;
   line-height: calc(24 / 16);
   color: var(--text-date-color);
 }
+
 /* Footer */
 .icons {
   color: var(--icon-color);
