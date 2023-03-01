@@ -69,8 +69,8 @@ margin: 0;
 /* Hero */
  .section-hero {
   display: block;
-  /* padding-left: 270px;
-  padding-right: 270px; */
+  padding-left: 270px;
+  padding-right: 270px;
 
   text-align: center;
 
